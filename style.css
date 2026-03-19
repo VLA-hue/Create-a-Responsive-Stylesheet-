@@ -1,0 +1,156 @@
+/* ======================================== */
+/* BASE STYLES */
+/* ======================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dedede;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+main {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+  color: #333;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======================================== */
+/* COLOR BOX CONTAINER */
+/* ======================================== */
+.color-box {
+  display: inline-block;
+  width: 24%;
+  margin: 5px;
+  padding: 10px;
+  vertical-align: top;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+/* ======================================== */
+/* IMAGES INSIDE COLOR BOXES */
+/* ======================================== */
+.color-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/* ======================================== */
+/* LABEL TEXT */
+/* ======================================== */
+.label {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #333;
+}
+
+/* ======================================== */
+/* FOOTER */
+/* ======================================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 2px solid #333;
+}
+
+/* ======================================== */
+/* MEDIA QUERY 1: 998px breakpoint */
+/* Divs change to 30% width */
+/* ======================================== */
+@media (max-width: 998px) {
+  .color-box {
+    width: 30%;
+  }
+  
+  .color-box img {
+    max-height: 30vh;
+    height: auto;
+  }
+}
+
+/* ======================================== */
+/* MEDIA QUERY 2: 772px breakpoint */
+/* Divs change to 45% width */
+/* Images max-height 30% of viewport */
+/* ======================================== */
+@media (max-width: 772px) {
+  .color-box {
+    width: 45%;
+  }
+  
+  .color-box img {
+    max-height: 30vh;
+    height: auto;
+  }
+}
+
+/* ======================================== */
+/* OPTIONAL: Mobile breakpoint (600px) */
+/* ======================================== */
+@media (max-width: 600px) {
+  .color-box {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
